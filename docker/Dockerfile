@@ -15,7 +15,7 @@ RUN apk add --update \
     bash gcc python-dev musl-dev libffi-dev openssl-dev unzip 
 RUN rm -rf /var/cache/apk/* 
                 
-RUN git clone https://github.com/shaposhnikoff/alertmanager-webhook-telegram-python.git 
+RUN git clone https://github.com/shaposhnikoff/alertmanager-webhook-telegram-python.git \
                 && pip install -r requirements.txt \
                 && chmod +x run.sh
 
