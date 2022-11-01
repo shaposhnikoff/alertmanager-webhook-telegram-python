@@ -3,4 +3,4 @@ flask
 python-telegram-bot
 Flask-BasicAuth
 gunicorn
-dateutil
+python-dateutil

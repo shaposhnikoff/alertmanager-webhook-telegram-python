@@ -1,4 +1,7 @@
 docker build . -t xxx
+docker stop telegram-bot
+docker rm telegram-bot
+
 docker run -it --name telegram-bot \
         -e "bottoken=telegramBotToken" \
         -e "chatid=telegramChatID" \
