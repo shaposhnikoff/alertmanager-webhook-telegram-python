@@ -12,12 +12,12 @@ RUN apk add --update \
     g++ \
     tini \
     linux-headers \
-    py-pip \
-    bash gcc python-dev musl-dev libffi-dev openssl-dev unzip 
+    py3-pip \
+    bash gcc python3-dev musl-dev libffi-dev openssl-dev unzip 
 
 RUN rm -rf /var/cache/apk/* 
                 
-RUN pip install -r requirements.txt \
+RUN pip3 install -r requirements.txt \
                 && chmod +x run.sh
 
 EXPOSE 9119
