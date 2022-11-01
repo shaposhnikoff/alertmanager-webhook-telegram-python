@@ -12,7 +12,7 @@ RUN apk add --update \
     bash \
     tini \
     linux-headers \
-    py-pip bash gcc python-dev musl-dev libffi-dev openssl-dev unzip \
+    py-pip bash gcc python-dev musl-dev libffi-dev openssl-dev unzip
     && rm -rf /var/cache/apk/* 
                 
 RUN git clone https://github.com/shaposhnikoff/alertmanager-webhook-telegram-python.git 
