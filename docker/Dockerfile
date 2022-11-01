@@ -9,11 +9,11 @@ RUN apk add --update \
     make \
     git \
     g++ \
-    bash \
     tini \
     linux-headers \
-    py-pip bash gcc python-dev musl-dev libffi-dev openssl-dev unzip
-    && rm -rf /var/cache/apk/* 
+    py-pip \
+    bash gcc python-dev musl-dev libffi-dev openssl-dev unzip 
+RUN rm -rf /var/cache/apk/* 
                 
 RUN git clone https://github.com/shaposhnikoff/alertmanager-webhook-telegram-python.git 
                 && pip install -r requirements.txt \
