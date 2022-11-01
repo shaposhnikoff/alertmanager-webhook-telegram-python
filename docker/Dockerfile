@@ -4,6 +4,15 @@ LABEL maintainer="Carlos Augusto Malucelli <camalucelli@gmail.com>"
 
 WORKDIR /alertmanager-webhook-telegram
 
+
+RUN apk add --update \
+    make \
+    git \
+    g++ \
+    bash \
+    tini \
+    linux-headers \
+    
 RUN apk update \
                 && apk add py-pip bash gcc python-dev musl-dev libffi-dev openssl-dev unzip \
                 && rm -rf /var/cache/apk/* \
