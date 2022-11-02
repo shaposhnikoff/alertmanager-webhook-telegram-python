@@ -12,7 +12,7 @@ basic_auth = BasicAuth(app)
 chatID = "-xchatIDx"
 
 # Authentication conf, change it!
-app.config['BASIC_AUTH_FORCE'] = True
+app.config['BASIC_AUTH_FORCE'] = False
 app.config['BASIC_AUTH_USERNAME'] = 'XXXUSERNAME'
 app.config['BASIC_AUTH_PASSWORD'] = 'XXXPASSWORD'
 
